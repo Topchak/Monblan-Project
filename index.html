@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Monblan Project</title>
+  <meta name="description" content="Monblan Project — modern web application" />
+  <link rel="stylesheet" href="./css/main.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+
+  <link rel="icon" href="./public/images/favicons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="16x16" href="./public/images/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./public/images/favicons/favicon-32x32.png">
+
+  <link rel="apple-touch-icon" href="./public/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./public/images/favicons/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="./public/images/favicons/android-chrome-512x512.png">
+
+</head>
+
+
+<body class="page">
+
+  <!-- фон -->
+  <div class="page-bg" aria-hidden="true">
+    <div class="page-bg__shape page-bg__shape--top"></div>
+    <div class="page-bg__shape page-bg__shape--bottom"></div>
+  </div>
+
+  <!-- контент -->
+  <div class="page__content">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__brand">
+          <img src="./public/images/logo.webp" width="138" height="138" alt="Monblan project logo"
+            class="header__logo" />
+        </div>
+        <div class="header__info-wrapper">
+          <div class="header__info">
+            <div class="header__title">
+              <h1 class="header__name">monblanproject</h1>
+              <span class="header__badge">Start on 17-02-2016</span>
+            </div>
+            <div class="header__stats">
+              <div class="header__stat">
+                <p class="header__stat-count">870</p>
+                <p> posts</p>
+              </div>
+              <div class="header__stat">
+                <p class="header__stat-count">11,787</p>
+                <p>followers</p>
+              </div>
+              <div class="header__stat">
+                <p class="header__stat-count">112</p>
+                <p>following</p>
+              </div>
+            </div>
+          </div>
+          <div class="filters">
+            <div class="filters__container">
+              <div class="filters__date">
+                <span class="filters__label">Date</span>
+                <div class="filters__inputs">
+                  <div class="filters__input-wrapper">
+                    <input type="text" name="from" class="filters__input filters__input--from" placeholder="from" />
+                    <span class="filters__icon filters__icon--calendar"></span>
+                    <span class="filters__icon filters__icon--clear"></span>
+                  </div>
+                  <div class="filters__input-wrapper">
+                    <input type="text" name="to" class="filters__input filters__input--to" placeholder="to" />
+                    <span class="filters__icon filters__icon--calendar"></span>
+                    <span class="filters__icon filters__icon--clear"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+
+      <!-- Types -->
+      <div class="types">
+        <div class="container container--types">
+          <div class="types__view">
+            <button type="button" class="types__view-btn types__view-btn--tiles types__view-btn--active"
+              aria-label="Tiles view">
+              <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                <rect width="6" height="6" fill="currentColor" />
+                <rect x="8" width="6" height="6" fill="currentColor" />
+                <rect x="16" width="6" height="6" fill="currentColor" />
+                <rect y="8" width="6" height="6" fill="currentColor" />
+                <rect y="16" width="6" height="6" fill="currentColor" />
+                <rect x="8" y="8" width="6" height="6" fill="currentColor" />
+                <rect x="8" y="16" width="6" height="6" fill="currentColor" />
+                <rect x="16" y="8" width="6" height="6" fill="currentColor" />
+                <rect x="16" y="16" width="6" height="6" fill="currentColor" />
+              </svg>
+            </button>
+            <button type="button" class="types__view-btn types__view-btn--rows ">
+              <svg width="24" height="22" viewBox="0 0 24 22" xmlns="http://www.w3.org/2000/svg">
+                <rect width="6" height="6" fill="currentColor" />
+                <rect y="8" width="6" height="6" fill="currentColor" />
+                <rect y="16" width="6" height="6" fill="currentColor" />
+                <rect x="9" y="10" width="15" height="2" fill="currentColor" />
+                <rect x="9" y="18" width="15" height="2" fill="currentColor" />
+                <rect x="9" y="2" width="15" height="2" fill="currentColor" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Posts -->
+      <section class="post-section post--rows">
+        <div class="container container--post">
+          <div class="post__wrapper post__wrapper--grid">
+
+            <article class="post">
+              <div class="post__media post__media--1">
+                <img src="./public/images/pictures-big/sky.webp" data-grid="./public/images/pictures-big/sky.webp"
+                  width="86" height="86" loading="lazy" data-row="./public/images/pictures-small/pic1.webp"
+                  class="post__image" alt="sky" />
+              </div>
+              <div class="post__content-wrapper">
+                <div class="post__content post__today">
+                  <div class=" post__meta">
+                    <span class="post__day">Today</span>
+                    <div class="post__stats">
+                      <span class="post__stat post__stat--likes"><svg width="15" height="14">
+                          <use href="#icon-heart"></use>
+                        </svg> 128</span>
+                      <span class="post__stat post__stat--comments"><svg width="15" height="15">
+                          <use href="#icon-chat"></use>
+                        </svg> 31</span>
+                    </div>
+                  </div>
+                  <div class="post__date">
+                    <span class="post__dates">9-08-2016</span>
+                    <div class="post__stats">
+                      <span class="post__stat post__stat--likes"><svg width="15" height="14">
+                          <use href="#icon-heart"></use>
+                        </svg> 128</span>
+                      <span class="post__stat post__stat--comments"><svg width="15" height="15">
+                          <use href="#icon-chat"></use>
+                        </svg> 31</span>
+                    </div>
+                  </div>
+                </div>
+                <div class=" post__upload">
+                  <span class="post__type">Image upload</span>
+                  <span class="post__uploaded">11-04-2016</span>
+                </div>
+              </div>
+            </article>
+            <article class="post">
+              <div class="post__media post__media--2">
+                <img src="./public/images/pictures-big/ships.webp" data-grid="./public/images/pictures-big/ships.webp"
+                  width="86" height="86" loading="lazy" data-row="./public/images/pictures-small/pic2.webp"
+                  class="post__image" alt="ships" />
+              </div>
+              <div class="post__content-wrapper">
+                <div class="post__content post__today">
+                  <div class=" post__meta">
+                    <span class="post__day">Today</span>
+                    <div class="post__stats">
+                      <span class="post__stat post__stat--likes"><svg width="15" height="14">
+                          <use href="#icon-heart"></use>
+                        </svg> 128</span>
+                      <span class="post__stat post__stat--comments"><svg width="15" height="15">
+                          <use href="#icon-chat"></use>
+                        </svg> 31</span>
+                    </div>
+                  </div>
+                  <div class="post__date">
+                    <span class="post__dates">9-08-2016</span>
+                    <div class="post__stats">
+                      <span class="post__stat post__stat--likes"><svg width="15" height="14">
+                          <use href="#icon-heart"></use>
+                        </svg> 128</span>
+                      <span class="post__stat post__stat--comments"><svg width="15" height="15">
+                          <use href="#icon-chat"></use>
+                        </svg> 31</span>
+                    </div>
+                  </div>
+                </div>
+                <div class=" post__upload">
+                  <span class="post__type">Image upload</span>
+                  <span class="post__uploaded">11-04-2016</span>
+                </div>
+              </div>
+            </article>
+            <article class="post">
+              <div class="post__media post__media--3">
+                <img src="./public/images/pictures-big/stairs.webp" data-grid="./public/images/pictures-big/stairs.webp"
+                  width="86" height="86" loading="lazy" data-row="./public/images/pictures-small/pic3.webp"
+                  class="post__image" alt="stairs" />
+              </div>
+              <div class="post__content-wrapper">
+                <div class="post__content post__today">
+                  <div class=" post__meta">
+                    <span class="post__day">Today</span>
+                    <div class="post__stats">
+                      <span class="post__stat post__stat--likes"><svg width="15" height="14">
+                          <use href="#icon-heart"></use>
+                        </svg> 128</span>
+                      <span class="post__stat post__stat--comments"><svg width="15" height="15">
+                          <use href="#icon-chat"></use>
+                        </svg> 31</span>
+                    </div>
+                  </div>
+                  <div class="post__date">
+                    <span class="post__dates">9-08-2016</span>
+                    <div class="post__stats">
+                      <span class="post__stat post__stat--likes"><svg width="15" height="14">
+                          <use href="#icon-heart"></use>
+                        </svg> 128</span>
+                      <span class="post__stat post__stat--comments"><svg width="15" height="15">
+                          <use href="#icon-chat"></use>
+                        </svg> 31</span>
+                    </div>
+                  </div>
+                </div>
+                <div class=" post__upload">
+                  <span class="post__type">Image upload</span>
+                  <span class="post__uploaded">11-04-2016</span>
+                </div>
+              </div>
+            </article>
+            <article class="post">
+              <div class="post__media">
+                <img src="./public/images/pictures-big/sky.webp" data-grid="./public/images/pictures-big/sky.webp"
+                  width="86" height="86" loading="lazy" data-row="./public/images/pictures-small/pic4.webp"
+                  class="post__image" alt="sky" />
+              </div>
+              <div class="post__content-wrapper">
+                <div class="post__content post__today">
+                  <div class=" post__meta">
+                    <span class="post__day">Today</span>
+                    <div class="post__stats">
+                      <span class="post__stat post__stat--likes"><svg width="15" height="14">
+                          <use href="#icon-heart"></use>
+                        </svg> 128</span>
+                      <span class="post__stat post__stat--comments"><svg width="15" height="15">
+                          <use href="#icon-chat"></use>
+                        </svg> 31</span>
+                    </div>
+                  </div>
+                  <div class="post__date">
+                    <span class="post__dates">9-08-2016</span>
+                    <div class="post__stats">
+                      <span class="post__stat post__stat--likes"><svg width="15" height="14">
+                          <use href="#icon-heart"></use>
+                        </svg> 128</span>
+                      <span class="post__stat post__stat--comments"><svg width="15" height="15">
+                          <use href="#icon-chat"></use>
+                        </svg> 31</span>
+                    </div>
+                  </div>
+                </div>
+                <div class=" post__upload">
+                  <span class="post__type">Image upload</span>
+                  <span class="post__uploaded">11-04-2016</span>
+                </div>
+              </div>
+            </article>
+            <article class="post">
+              <div class="post__media">
+                <img src="./public/images/pictures-big/sky.webp" data-grid="./public/images/pictures-big/sky.webp"
+                  width="86" height="86" loading="lazy" data-row="./public/images/pictures-small/pic5.webp"
+                  class="post__image" alt="sky" />
+              </div>
+              <div class="post__content-wrapper">
+                <div class="post__content post__today">
+                  <div class=" post__meta">
+                    <span class="post__day">Today</span>
+                    <div class="post__stats">
+                      <span class="post__stat post__stat--likes"><svg width="15" height="14">
+                          <use href="#icon-heart"></use>
+                        </svg> 128</span>
+                      <span class="post__stat post__stat--comments"><svg width="15" height="15">
+                          <use href="#icon-chat"></use>
+                        </svg> 31</span>
+                    </div>
+                  </div>
+                  <div class="post__date">
+                    <span class="post__dates">9-08-2016</span>
+                    <div class="post__stats">
+                      <span class="post__stat post__stat--likes"><svg width="15" height="14">
+                          <use href="#icon-heart"></use>
+                        </svg> 128</span>
+                      <span class="post__stat post__stat--comments"><svg width="15" height="15">
+                          <use href="#icon-chat"></use>
+                        </svg> 31</span>
+                    </div>
+                  </div>
+                </div>
+                <div class=" post__upload">
+                  <span class="post__type">Image upload</span>
+                  <span class="post__uploaded">11-04-2016</span>
+                </div>
+              </div>
+            </article>
+            <article class="post">
+              <div class="post__media">
+                <img src="./public/images/pictures-big/man.webp" data-grid="./public/images/pictures-big/man.webp"
+                  width="86" height="86" loading="lazy" data-row="./public/images/pictures-small/pic6.webp"
+                  class="post__image" alt="man" />
+              </div>
+              <div class="post__content-wrapper">
+                <div class="post__content post__today">
+                  <div class=" post__meta">
+                    <span class="post__day">Today</span>
+                    <div class="post__stats">
+                      <span class="post__stat post__stat--likes"><svg width="15" height="14">
+                          <use href="#icon-heart"></use>
+                        </svg> 128</span>
+                      <span class="post__stat post__stat--comments"><svg width="15" height="15">
+                          <use href="#icon-chat"></use>
+                        </svg> 31</span>
+                    </div>
+                  </div>
+                  <div class="post__date">
+                    <span class="post__dates">9-08-2016</span>
+                    <div class="post__stats">
+                      <span class="post__stat post__stat--likes"><svg width="15" height="14">
+                          <use href="#icon-heart"></use>
+                        </svg> 128</span>
+                      <span class="post__stat post__stat--comments"><svg width="15" height="15">
+                          <use href="#icon-chat"></use>
+                        </svg> 31</span>
+                    </div>
+                  </div>
+                </div>
+                <div class=" post__upload">
+                  <span class="post__type">Image upload</span>
+                  <span class="post__uploaded">11-04-2016</span>
+                </div>
+              </div>
+            </article>
+            <article class="post">
+              <div class="post__media">
+                <img src="./public/images/pictures-big/house.webp" data-grid="./public/images/pictures-big/house.webp"
+                  width="86" height="86" loading="lazy" data-row="./public/images/pictures-small/pic7.webp"
+                  class="post__image" alt="house" />
+              </div>
+              <div class="post__content-wrapper">
+                <div class="post__content post__today">
+                  <div class=" post__meta">
+                    <span class="post__day">Today</span>
+                    <div class="post__stats">
+                      <span class="post__stat post__stat--likes"><svg width="15" height="14">
+                          <use href="#icon-heart"></use>
+                        </svg> 128</span>
+                      <span class="post__stat post__stat--comments"><svg width="15" height="15">
+                          <use href="#icon-chat"></use>
+                        </svg> 31</span>
+                    </div>
+                  </div>
+                  <div class="post__date">
+                    <span class="post__dates">9-08-2016</span>
+                    <div class="post__stats">
+                      <span class="post__stat post__stat--likes"><svg width="15" height="14">
+                          <use href="#icon-heart"></use>
+                        </svg> 128</span>
+                      <span class="post__stat post__stat--comments"><svg width="15" height="15">
+                          <use href="#icon-chat"></use>
+                        </svg> 31</span>
+                    </div>
+                  </div>
+                </div>
+                <div class=" post__upload">
+                  <span class="post__type">Image upload</span>
+                  <span class="post__uploaded">11-04-2016</span>
+                </div>
+              </div>
+            </article>
+            <article class="post">
+              <div class="post__media">
+                <img src="./public/images/pictures-big/inside.webp" data-grid="./public/images/pictures-big/inside.webp"
+                  width="86" height="86" loading="lazy" data-row="./public/images/pictures-small/pic8.webp"
+                  class="post__image" alt="inside" />
+              </div>
+              <div class="post__content-wrapper">
+                <div class="post__content post__today">
+                  <div class=" post__meta">
+                    <span class="post__day">Today</span>
+                    <div class="post__stats">
+                      <span class="post__stat post__stat--likes"><svg width="15" height="14">
+                          <use href="#icon-heart"></use>
+                        </svg> 128</span>
+                      <span class="post__stat post__stat--comments"><svg width="15" height="15">
+                          <use href="#icon-chat"></use>
+                        </svg> 31</span>
+                    </div>
+                  </div>
+                  <div class="post__date">
+                    <span class="post__dates">9-08-2016</span>
+                    <div class="post__stats">
+                      <span class="post__stat post__stat--likes"><svg width="15" height="14">
+                          <use href="#icon-heart"></use>
+                        </svg> 128</span>
+                      <span class="post__stat post__stat--comments"><svg width="15" height="15">
+                          <use href="#icon-chat"></use>
+                        </svg> 31</span>
+                    </div>
+                  </div>
+                </div>
+                <div class=" post__upload">
+                  <span class="post__type">Image upload</span>
+                  <span class="post__uploaded">11-04-2016</span>
+                </div>
+              </div>
+            </article>
+            <article class="post hidden">
+              <div class="post__media">
+                <img width="86" height="86" loading="lazy" src="./public/images/pictures-small/pic9.webp"
+                  data-row="./public/images/pictures-small/pic9.webp" class="post__image" alt="house" />
+              </div>
+              <div class="post__content-wrapper">
+                <div class="post__content post__today">
+                  <div class=" post__meta">
+                    <span class="post__day">Today</span>
+                    <div class="post__stats">
+                      <span class="post__stat post__stat--likes"><svg width="15" height="14">
+                          <use href="#icon-heart"></use>
+                        </svg> 128</span>
+                      <span class="post__stat post__stat--comments"><svg width="15" height="15">
+                          <use href="#icon-chat"></use>
+                        </svg> 31</span>
+                    </div>
+                  </div>
+                  <div class="post__date">
+                    <span class="post__dates">9-08-2016</span>
+                    <div class="post__stats">
+                      <span class="post__stat post__stat--likes"><svg width="15" height="14">
+                          <use href="#icon-heart"></use>
+                        </svg> 128</span>
+                      <span class="post__stat post__stat--comments"><svg width="15" height="15">
+                          <use href="#icon-chat"></use>
+                        </svg> 31</span>
+                    </div>
+                  </div>
+                </div>
+                <div class=" post__upload">
+                  <span class="post__type">Image upload</span>
+                  <span class="post__uploaded">11-04-2016</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Load more -->
+      <div class="btn__load-more-wrapper">
+        <button type="button" class="btn__load-more">
+          Load more
+        </button>
+      </div>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="js/main.js"></script>
+
+  <!-- спрайты -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <!-- сердечко -->
+    <symbol id="icon-heart" viewBox="0 0 15 14">
+      <path
+        d="M5.95536e-08 4.05069C-9.22365e-05 3.51247 0.107097 2.97963 0.315302 2.48331C0.523508 1.98698 0.828553 1.53714 1.21261 1.16007C1.59667 0.782992 2.05203 0.486251 2.55209 0.287187C3.05215 0.0881223 3.58687 -0.00927256 4.125 0.000694555C4.76172 -0.00268682 5.39189 0.129297 5.97374 0.387898C6.55559 0.646498 7.07584 1.02581 7.5 1.50069C7.92416 1.02581 8.44441 0.646498 9.02626 0.387898C9.60811 0.129297 10.2383 -0.00268682 10.875 0.000694555C11.4131 -0.00927256 11.9479 0.0881223 12.4479 0.287187C12.948 0.486251 13.4033 0.782992 13.7874 1.16007C14.1714 1.53714 14.4765 1.98698 14.6847 2.48331C14.8929 2.97963 15.0001 3.51247 15 4.05069C15 8.06769 10.2157 11.1007 7.5 13.5007C4.79025 11.0804 5.95536e-08 8.07069 5.95536e-08 4.05069Z"
+        fill="black" />
+    </symbol>
+    <!-- чат -->
+    <symbol id="icon-chat" viewBox="0 0 15 15">
+      <path d="M15 1.5C15 0.675 14.325 0 13.5 0H1.5C0.675 0 0 0.675 0 1.5V10.5C0 11.325 0.675 12 1.5 12H12L15 15V1.5Z"
+        fill="black" />
+    </symbol>
+  </svg>
+
+</body>
+
+</html>

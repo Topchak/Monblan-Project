@@ -1,0 +1,37 @@
+.btn {
+
+  // .btn__load-more-wrapper
+
+  &__load-more-wrapper {
+    margin-top: 33px;
+    margin-bottom: 100px;
+
+  }
+
+  // .btn__load-more
+
+  &__load-more {
+    margin: 0 auto;
+    display: block;
+    color: rgba(146, 146, 146, 1);
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: -3%;
+    text-align: left;
+    border: 1px solid rgba(146, 146, 146, 1);
+    border-radius: 14px;
+    padding: 8px 26px;
+    outline: none;
+    transition: 0.3s ease;
+
+    &:hover {
+      color: rgba(61, 142, 218, 1);
+      border: 1px solid rgba(61, 142, 218, 1);
+    }
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.types {
+  position: relative;
+  margin-bottom: 25px;
+  margin-top: 21px;
+  z-index: 2;
+  width: 100%;
+}
+
+.types__view {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  align-items: center;
+
+
+
+
+}
+
+.types__view-btn--rows,
+.types__view-btn--tiles {
+  width: 24px;
+  height: 24px;
+  color: #C8C7C7;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #3d8eda;
+  }
+
+  svg {
+    fill: currentColor;
+    transition: fill 0.3s ease;
+  }
+}
+
+.types__view-btn--active {
+  color: #3d8eda;
+
+  svg {
+    fill: currentColor;
+  }
+}
+
+
+.types__view-btn {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  outline: none;
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+
+

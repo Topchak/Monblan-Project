@@ -1,0 +1,54 @@
+/* (Regular) */
+@font-face {
+  font-family: "Roboto"; // TODO: переименуй под свой шрифт
+  src:
+    local("Roboto Regular"),
+    url("../public/fonts/Roboto-Regular.woff2") format("woff2"),
+    url("../public/fonts/Roboto-Regular.woff") format("woff");
+  font-weight: 400; // обычный
+  font-style: normal;
+  font-display: swap;
+}
+
+/* (Medium) */
+@font-face {
+  font-family: "Roboto";
+  src:
+    local("Roboto Medium"),
+    url("../public/fonts/Roboto-Medium.woff2") format("woff2"),
+    url("../public/fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500; // medium
+  font-style: normal;
+  font-display: swap;
+}
+
+/*  (Bold) */
+@font-face {
+  font-family: "Roboto";
+  src:
+    local("Roboto Bold"),
+    url("../public/fonts/Roboto-Bold.woff2") format("woff2"),
+    url("../public/fonts/Roboto-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* Second font */
+
+
+
+/* (Regular) */
+
+
+@font-face {
+  font-family: "Montserrat"; // TODO: если нужен доп. шрифт
+  src:
+    local("Montserrat Medium"),
+    url("../public/fonts/Montserrat-Medium.woff2") format("woff2"),
+    url("../public/fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

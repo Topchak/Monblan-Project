@@ -1,0 +1,233 @@
+.filters {
+  margin-top: 18px;
+  overflow: visible;
+
+  @media (max-width:1200px) {
+    margin-top: 12px;
+  }
+}
+
+.filters__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+
+  @media (max-width:767px) {
+    justify-content: center;
+  }
+
+  @media (max-width:600px) {
+    justify-content: flex-start;
+  }
+
+
+}
+
+.filters__date {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  @media (max-width:479px) {
+    flex-direction: column;
+  }
+
+  @media (max-width:380px) {
+    width: 100%;
+  }
+}
+
+.filters__label {
+  font-size: 14px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+
+  @media (max-width:600px) {
+    font-weight: 500;
+    font-size: 18px;
+  }
+}
+
+.filters__inputs {
+  display: flex;
+  gap: 8px;
+
+  @media (max-width:380px) {
+    flex-direction: column;
+  }
+
+  &:placeholder {
+    color: rgba(99, 98, 100, 1);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+
+}
+
+.filters__input-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.filters__input {
+  width: 162px;
+  height: 26px;
+  overflow: hidden;
+  padding: 0px 60px 0px 8px; // справа место под 2 иконки
+  border: 1px solid #a8a8a8;
+  border-radius: 4px;
+  background: #fff;
+  border: 1px solid rgba(222, 222, 222, 1);
+  outline: none;
+}
+
+.filters__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+
+  background-color: #f0f0f0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px 24px;
+  border: 1px solid rgba(222, 222, 222, 1);
+}
+
+.filters__icon--calendar {
+  right: 0px;
+  background-image: url("../public/images/icons/calendar.png");
+  border-left: none;
+  border-radius: 0px 4px 4px 0px;
+  transition: 0.1s ease;
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.filters__icon--clear {
+  right: 25px;
+  background-image: url("../public/images/icons/x.png");
+  border-right: none;
+  border: 1px solid rgba(222, 222, 222, 1);
+  transition: 0.1s ease;
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.flatpickr-input {
+  color: rgba(99, 98, 100, 1);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.flatpickr-calendar {
+  width: 220px !important;
+  height: 231px !important;
+  border-radius: 5px !important;
+  background: rgba(255, 255, 255, 1) !important;
+  padding-left: 10px !important;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15) !important;
+
+}
+
+.dayContainer {
+  width: 200px !important;
+  min-width: 200px !important;
+  padding-top: 0 !important;
+  row-gap: 2px;
+  gap: 5px !important;
+}
+.dayContainer .flatpickr-day:nth-child(7n+1) {
+  background: #F4F4F4;  
+  border-radius: 2px;
+}
+
+.flatpickr-weekdays {
+  width: 200px !important;
+  min-width: 200px !important;
+}
+
+.flatpickr-weekday {
+  color: rgba(0, 0, 0, 1) !important;
+  font-style: Bold;
+  font-size: 15px !important;
+  font-weight: 700;
+}
+
+.flatpickr-day {
+  width: auto !important;
+  line-height: 23px !important;
+  text-align: center;
+  max-height: 23px !important;
+  max-width: 23px !important;
+
+  &:hover {
+    background: rgba(61, 142, 218, 1);
+    color: #000000;
+    border-color: rgba(61, 142, 218, 1) !important;
+    border-radius: 2px;
+  }
+
+  &.selected {
+    background: rgba(61, 142, 218, 0.822);
+    color: #fff;
+    border-color: rgba(61, 142, 218, 0.792) !important;
+    border-radius: 2px;
+  }
+}
+
+.flatpickr-day.today {
+  border-radius: 2px;
+  background: rgba(61, 142, 218, 1);
+  color: #fff;
+  border-color: rgba(61, 142, 218, 1) !important;
+}
+
+
+
+.flatpickr-prev-month svg,
+.flatpickr-next-month svg {
+  display: none; // скрыть стандартные стрелки
+}
+
+.flatpickr-prev-month::before {
+  content: "«";
+  font-size: 20px;
+}
+
+.flatpickr-next-month::before {
+  content: "»";
+  font-size: 20px;
+  top: 10px;
+}
+
+.numInput.cur-year {
+  color: rgba(0, 0, 0, 1) !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+
+}
+.flatpickr-prev-month{
+  top: -6px !important;
+}
+.flatpickr-next-month{
+  top: -6px !important;
+}

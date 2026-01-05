@@ -1,0 +1,65 @@
+.page {
+  position: relative;
+  min-height: 100vh;
+}
+
+.page-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.page-bg__shape {
+  position: absolute;
+}
+
+.page-bg__shape--top {
+  top: -82px;
+  left: -60px;
+  width: 689px;
+  height: 485px;
+  background: url("../public/images/header-vector.webp") no-repeat;
+  background-size: contain;
+  z-index: 0;
+
+  @media (max-width: 767px) {
+    top: -72px;
+    left: -60px;
+    width: 550px;
+    height: 395px;
+  }
+
+  @media (max-width:600px) {
+    top: -72px;
+    left: -60px;
+    width: 450px;
+    height: 325px;
+  }
+
+}
+
+.page-bg__shape--bottom {
+  bottom: 82px;
+  right: -98px;
+  width: 315px;
+  height: 367px;
+  background: url("../public/images/footer-vector.webp") no-repeat;
+  background-size: contain;
+  z-index: 0;
+
+  @media (max-width: 767px) {
+    bottom: 52px;
+    right: -60px;
+    width: 250px;
+    height: 300px;
+  }
+
+
+  @media (max-width:600px) {
+    bottom: 12px;
+    right: -60px;
+    width: 200px;
+    height: 250px;
+  }
+}
